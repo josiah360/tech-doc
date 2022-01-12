@@ -81,6 +81,27 @@ pre {
     padding: 1em;
 }
 
+/* ============== SCROLLBAR STYLING ================= */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(145, 145, 145);
+}
+
+
+
+
+/* ============== MEDIA QUERIES ================== */
+
 
 @media (min-width: 768px) {
     .wrapper {
@@ -96,7 +117,7 @@ pre {
     nav ul {
         width: 300px;
         border-bottom: 0;
-        height: auto;
+        height: 100vh;
         position: sticky;
         top: 81.2px;
         margin: 0;
